@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>100 TSD Forms</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>100 TSD Forms</h1>
+    <p class="tagline">Tracking progress toward 100 Tang Soo Do (and adjacent) forms.</p>
+  </header>
+
+  <section class="progress" aria-label="Overall progress">
+    <!-- Counts below (count-current, bar segment widths, aria-label, legend-count) are
+         hand-kept in sync for now — update all four together when a form's status changes. -->
+    <div class="progress-count">
+      <span class="count-current">0</span><span class="count-sep">/</span><span class="count-total">100</span>
+      <span class="count-label">forms</span>
+    </div>
+    <div class="progress-bar" role="img" aria-label="0 recorded, 0 known but not recorded, 0 learning, 100 not started">
+      <div class="segment recorded" style="width: 0%"></div>
+      <div class="segment known" style="width: 0%"></div>
+      <div class="segment learning" style="width: 0%"></div>
+      <div class="segment unknown" style="width: 100%"></div>
+    </div>
+    <ul class="legend">
+      <li><span class="dot recorded"></span>Recorded <span class="legend-count">0</span></li>
+      <li><span class="dot known"></span>Know, not recorded <span class="legend-count">0</span></li>
+      <li><span class="dot learning"></span>Learning <span class="legend-count">0</span></li>
+      <li><span class="dot unknown"></span>Don't know <span class="legend-count">100</span></li>
+    </ul>
+  </section>
+
+  <main>
+    <section class="family">
+      <h2 class="family-title">Sae Kye Hyung</h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Sae Kye Hyung Il Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">10th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Sae Kye Hyung E Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">9th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Sae Kye Hyung Sam Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">8th Gup</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Pyung Ahn</h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Pyung Ahn Cho Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">7th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Pyung Ahn E Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">6th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Pyung Ahn Sam Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">5th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Pyung Ahn Sah Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">4th Gup</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: don't know.</span>
+          <span class="form-name">Pyung Ahn O Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-rank">3rd Gup</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
