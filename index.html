@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>100 TSD Forms</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,91 +18,455 @@
     <!-- Counts below (count-current, bar segment widths, aria-label, legend-count) are
          hand-kept in sync for now — update all four together when a form's status changes. -->
     <div class="progress-count">
-      <span class="count-current">0</span><span class="count-sep">/</span><span class="count-total">100</span>
+      <span class="count-current">20</span><span class="count-sep">/</span><span class="count-total">100</span>
       <span class="count-label">forms</span>
     </div>
-    <div class="progress-bar" role="img" aria-label="0 recorded, 0 known but not recorded, 0 learning, 100 not started">
+    <div class="progress-bar" role="img" aria-label="0 recorded, 20 learned, 7 learning, 73 not started">
       <div class="segment recorded" style="width: 0%"></div>
-      <div class="segment known" style="width: 0%"></div>
-      <div class="segment learning" style="width: 0%"></div>
-      <div class="segment unknown" style="width: 100%"></div>
+      <div class="segment known" style="width: 20%"></div>
+      <div class="segment learning" style="width: 7%"></div>
+      <div class="segment unknown" style="width: 73%"></div>
     </div>
     <ul class="legend">
       <li><span class="dot recorded"></span>Recorded <span class="legend-count">0</span></li>
-      <li><span class="dot known"></span>Know, not recorded <span class="legend-count">0</span></li>
-      <li><span class="dot learning"></span>Learning <span class="legend-count">0</span></li>
-      <li><span class="dot unknown"></span>Don't know <span class="legend-count">100</span></li>
+      <li><span class="dot known"></span>Learned <span class="legend-count">20</span></li>
+      <li><span class="dot learning"></span>Learning <span class="legend-count">7</span></li>
+      <li><span class="dot unknown"></span>Not started <span class="legend-count">73</span></li>
     </ul>
   </section>
 
-  <main>
+  <div class="page-layout">
+    <aside class="about">
+      <h2 class="about-title">About</h2>
+      <p>My name is Victor Ronin. I'm a second-degree black belt in Tang Soo Do, training in New York City under my instructor, Master Ralph. Our studio is part of the World Tang Soo Do Association.</p>
+      <p>One part of training I've come to really enjoy is learning forms.</p>
+      <p>This is a personal project to learn and document 100 Tang Soo Do&ndash;adjacent forms. That number may shift over time, but the goal is long-term consistency and progress &mdash; posting these videos is how I hold myself accountable and keep moving forward.</p>
+      <p>As many practitioners know, a form can be refined indefinitely; some spend years, even decades, polishing a single hyung. Because of that, my standard here isn't perfection &mdash; it's competence. I'm aiming for a level where each form would earn a solid passing grade.</p>
+      <p>When possible, I plan to have these forms reviewed by qualified instructors from the associations or systems where they originate, for outside feedback and validation.</p>
+      <p>These videos aren't instructional material or a reference standard &mdash; just a record of my own training and progress through this project.</p>
+      <p>If you're on a similar path, or just interested in forms practice, I hope you find something useful or motivating here. Feel free to reach out at victor dot ronin at gmail dot com.</p>
+    </aside>
+
+    <main>
     <section class="family">
-      <h2 class="family-title">Sae Kye Hyung</h2>
+      <h2 class="family-title">Sae Kye Hyung <span class="family-count">3 forms</span></h2>
       <ul class="form-list">
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Sae Kye Hyung Il Bu</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">10th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Sae Kye Hyung E Bu</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">9th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Sae Kye Hyung Sam Bu</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">8th Gup</span>
         </li>
       </ul>
     </section>
 
     <section class="family">
-      <h2 class="family-title">Pyung Ahn</h2>
+      <h2 class="family-title">Ki Cho Hyung <span class="family-count">3 forms</span></h2>
       <ul class="form-list">
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Ki Cho Hyung Il Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">10th Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Ki Cho Hyung E Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">9th Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Ki Cho Hyung Sam Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">8th Gup</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Pyung Ahn <span class="family-count">5 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Pyung Ahn Cho Dan</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">7th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Pyung Ahn E Dan</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">6th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Pyung Ahn Sam Dan</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">5th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Pyung Ahn Sah Dan</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">4th Gup</span>
         </li>
-        <li class="form-row" data-status="unknown">
-          <span class="status-dot unknown" aria-hidden="true"></span>
-          <span class="sr-only">Status: don't know.</span>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
           <span class="form-name">Pyung Ahn O Dan</span>
           <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
           <span class="form-rank">3rd Gup</span>
         </li>
       </ul>
     </section>
-  </main>
+
+    <section class="family">
+      <h2 class="family-title">Bong Hyung <span class="family-count">4 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Bong Hyung Il Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">4th Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Bong Hyung E Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">1st Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Bong Hyung Sam Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">1st Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Bong Hyung Sah Bu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">???</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Naihanchi <span class="family-count">3 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Naihanchi Cho Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">1st Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Naihanchi E Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">1st Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Naihanchi Sam Dan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Chil Sung <span class="family-count">7 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Il Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Chil Sung E Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">1st Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Sam Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">3rd Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Sah Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">4th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Oh Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">5th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Yuk Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">6th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Chil Sung Chil Ro</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">7th Dan</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Jang Gum Hyung <span class="family-count">3 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Ki Cho Jang Gum Hyung</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Jung Koop Jang Gum Hyung</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">3rd Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Jang Gum Hyung</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">4th Dan</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="family">
+      <h2 class="family-title">Yuk Ro <span class="family-count">6 forms</span></h2>
+      <ul class="form-list">
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro Cho Dan (Du Mun)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro E Dan (Joong Jul)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">3rd Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro Sam Dan (Po Wol)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">4th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro Sah Dan (Yang Pyun)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">5th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro Oh Dan (Sal Chu)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">6th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Yuk Ro Yuk Dan (Choong Ro)</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">7th Dan</span>
+        </li>
+      </ul>
+    </section>
+
+    <ul class="form-list standalone-group">
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Bassai</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">2nd Gup</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Sip Soo</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">CDB</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Jin Do</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+        <li class="form-row" data-status="known">
+          <span class="status-dot known" aria-hidden="true"></span>
+          <span class="sr-only">Status: learned.</span>
+          <span class="form-name">Dan Gum Hyung</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">2nd Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Ro Hai</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">3rd Dan</span>
+        </li>
+        <li class="form-row" data-status="learning">
+          <span class="status-dot learning" aria-hidden="true"></span>
+          <span class="sr-only">Status: learning.</span>
+          <span class="form-name">Kong Sang Koon</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">3rd Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Wang Shu</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">4th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Sei Shan</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">4th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Jion</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">5th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Ji Pang Yi Hyung</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Weapon</span>
+          <span class="form-rank">5th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Oh Sip Sah Bo</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">6th Dan</span>
+        </li>
+        <li class="form-row" data-status="unknown">
+          <span class="status-dot unknown" aria-hidden="true"></span>
+          <span class="sr-only">Status: not started.</span>
+          <span class="form-name">Sae Kye Jang Kwon</span>
+          <span class="form-style">Tang Soo Do</span>
+          <span class="form-type">Open Hand</span>
+          <span class="form-rank">7th Dan</span>
+        </li>
+    </ul>
+    </main>
+  </div>
 </body>
 </html>
