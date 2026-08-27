@@ -464,3 +464,80 @@ body {
 .video-link:hover .video-link-label {
   text-decoration: underline;
 }
+
+.step-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 1rem;
+}
+
+.step-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-image-row,
+.step-label-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.step {
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-kihap-slot {
+  height: 1.7rem;
+  margin-bottom: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.1rem;
+}
+
+.step-kihap {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+}
+
+.kihap-arrow {
+  font-size: 0.65rem;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.step-image {
+  width: 92px;
+  height: 92px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+.step-label {
+  width: 92px;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--ink);
+}
+
+.step-line {
+  margin: 0.5rem 0;
+  height: 2px;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.step-group--multi .step-line {
+  background: var(--ink);
+}
