@@ -388,6 +388,10 @@ body {
   font-style: italic;
 }
 
+.placeholder-note + .placeholder-note {
+  margin-top: 0.75rem;
+}
+
 .stat-list {
   list-style: none;
   display: flex;
