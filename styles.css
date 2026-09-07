@@ -5,6 +5,7 @@
   --surface: #ffffff;
   --border: rgba(32, 31, 29, 0.12);
 
+  --status-not-found: #b3b0a4;
   --status-unknown: #83806c;
   --status-learning: #c08a2e;
   --status-known: #4f9678;
@@ -23,6 +24,7 @@
     --surface: #1f2123;
     --border: rgba(236, 233, 225, 0.14);
 
+    --status-not-found: #5a584f;
     --status-unknown: #847f70;
     --status-learning: #d9a23b;
     --status-known: #5fae8c;
@@ -122,6 +124,7 @@ body {
 .segment.known { background: var(--status-known); }
 .segment.learning { background: var(--status-learning); }
 .segment.unknown { background: var(--status-unknown); }
+.segment.not-found { background: var(--status-not-found); }
 
 .legend {
   list-style: none;
@@ -156,6 +159,7 @@ body {
 .dot.known, .status-dot.known { background: var(--status-known); }
 .dot.learning, .status-dot.learning { background: var(--status-learning); }
 .dot.unknown, .status-dot.unknown { background: var(--status-unknown); }
+.dot.not-found, .status-dot.not-found { background: var(--status-not-found); }
 
 .page-layout {
   max-width: 960px;
